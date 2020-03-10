@@ -10,21 +10,6 @@
 
 
 
-# EMALCSA BUNDLES
-> This is a first prototype for THE BUNDLES adopting the event bus for emalcsa case study
-
-**Three bundles are necessary to execute the bundles**
-*  1- Import the Maven files located in emalcsa directory or unzip the file emalcsa.zip
-*  2- locate single-framework-example and lunch debug.bndrun
-*  3- Click run OSGi
-*  4- Type predictor to load the predictor bundle
-*  5- Type train to load the train bundle
-*  6- Type main to load the main bundle in charge of commanding prediction and training
-*  7- Download the modified version of IM prediction package to make a quick prediction on your OS platform (download the required libraries and test-it) 
-
->    ` Important: To make a correct prediction, users have to modify the predictmodel class in predict.impl to locate the sh file and ensure communication with python files.`
->    ` uncomment the predict.sh with a correct location of python files.`
-
 
 # BIP_To_Java
 
@@ -66,22 +51,3 @@
 * 9- Import the BipToJavaCase10 (from the directory where the archive was uncompressed). (Some Eclipse versions require to change the java version to support annotations)
 * 10- Try to remove "Atom package" and make some update on the BIP model -> The "Atom package" will be automatically created
 
-**Experiments :**
-
-The project conains two folders:
-
-**1- The BIP model of the Robot Behavior**
-* Robot atomic Component
-* Door atomic Component
-* Orchestrator atomic Component
-* The Main component gluing the BIP atomic components
-
-**2- The Java code related to the BIP Model:**
-* Unzip the file in Eclipse Workspace
-* Import the Java project
-
-# Generated Bundles
-* Import the bundles from eventingBusExample
-* Open the debug file from single-framework-example and press run OSGi
-* check the availability of bundles using  command : lb
-* run this commands : start door | start orch | start robot
